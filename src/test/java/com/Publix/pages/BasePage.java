@@ -13,8 +13,6 @@ public class BasePage {
     @FindBy(xpath = "//a[@id='userLogIn']")
     public WebElement loginTab;
 
-    public void userLogin(){
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-    }
+
 }
