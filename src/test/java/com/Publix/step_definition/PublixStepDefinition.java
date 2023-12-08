@@ -26,7 +26,7 @@ public class PublixStepDefinition {
     @Given("user is on the home page and click on login button on the upper right side of the page")
     public void user_is_on_the_home_page_and_click_on_login_button_on_the_upper_right_side_of_the_page() {
 
-       // basePage.userLogin();
+        basePage.userLogin();
 
         basePage.loginTab.click();
        // System.out.println(basePage.loginTab);
