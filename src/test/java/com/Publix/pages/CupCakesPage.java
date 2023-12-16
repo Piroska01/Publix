@@ -1,4 +1,4 @@
 package com.Publix.pages;
 
-public class CupCakesPage {
+public class CupCakesPage extends BasePage{
 }

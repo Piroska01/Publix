@@ -1,19 +1,17 @@
 package com.Publix.pages;
 
 import com.Publix.utilities.Driver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BakeryPage {
+public class BakeryPage extends BasePage {
 
-    public BakeryPage(){
-
-        PageFactory.initElements(Driver.getDriver(),this);
+    public void clickLoginTab(){
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("document.querySelector('#userLogIn',':before').click();");
     }
-    @FindBy(xpath ="//button[@title='Order ahead']")
-    public WebElement orderAheadTab;
+    }
 
-    @FindBy(xpath ="//a[normalize-space()='Bakery']")
-    public WebElement bakeryTab;
-}
+

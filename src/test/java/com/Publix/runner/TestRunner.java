@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/Publix/step_definition",
         dryRun = false,
-        tags = "@wip",
+        tags = "@wip1",
 
         publish =true // generating a report with public link
 

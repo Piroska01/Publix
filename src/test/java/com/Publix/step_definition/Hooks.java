@@ -11,7 +11,7 @@ import java.time.Duration;
 
 public class Hooks {
 
-    @Before("@wip")
+    @Before
     public void setUp(){
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Driver.getDriver().manage().window().maximize();
@@ -19,7 +19,7 @@ public class Hooks {
 
     }
 
-    @After("@wip")
+    @After
     public void teardownMethod(Scenario scenario){
 
         if (scenario.isFailed()){
@@ -28,6 +28,6 @@ public class Hooks {
             scenario.attach(screenshot,"image/png", scenario.getName());
         }
 
-        Driver.closeDriver();
+       // Driver.closeDriver();
     }
 }
